@@ -1,0 +1,22 @@
+{
+    "plugin_directory": "~/.claude/plugins",
+    "frequency": "weekly",
+    "scan_on_start": true,
+    "rules": {
+        "suspicious_env_vars": [
+            "ANTHROPIC_API_KEY",
+            "OPENAI_API_KEY",
+            "AWS_SECRET_ACCESS_KEY",
+            "GITHUB_TOKEN",
+            "PASSWORD",
+            "SECRET"
+        ],
+        "sensitive_paths": [
+            ".ssh",
+            ".aws/credentials",
+            ".env",
+            "config.json",
+            ".kube/config"
+        ]
+    }
+}
